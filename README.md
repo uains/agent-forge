@@ -29,12 +29,16 @@ AgentForge 是一个面向学习与实战的开源项目：不直接封装现成
 - **可评测**：提供任务集与评测脚本，衡量 Agent 表现
 - **面向实战**：不仅讲概念，也提供可运行示例与工程结构
 
+## 完成
+
+- [x] AsyncHttpClient
+
 ## 架构模块
 
 ```text
 AgentForge
-├── core          # Agent Loop、状态与执行内核
-├── llm           # LLM 适配层
+├── http          # 网络请求
+├── docs          # 学习记录文档
 ├── tools         # 工具注册、调用与权限控制
 ├── memory        # 短期/长期记忆
 ├── planner       # 规划与任务分解
@@ -42,3 +46,4 @@ AgentForge
 ├── observability # 日志、追踪与可视化
 ├── evals         # 任务集与评测
 └── examples      # 从最小 Agent 到完整 Agent 的示例
+```
