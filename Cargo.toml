@@ -4,3 +4,21 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+tokio = { version = "*", features = [
+    "macros",
+    "rt-multi-thread",
+    "time",
+    "net",
+] }
+tokio-util = { version = "*", features = ["rt"] }
+hyper = { version = "*", features = ["client", "http1", "http2"] }
+hyper-util = { version = "*", features = ["client", "http1", "http2", "tokio"] }
+hyper-rustls = { version = "*", features = ["http2"] }
+http-body-util = "*"
+bytes = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = { version = "*" }
+anyhow = { version = "*" }
+url = "*"
+thiserror = "*"
+http = "*"
